@@ -32,17 +32,25 @@ TABLE and LIST are for visual layout
 ## EXAMPLES
 
 ### EXAMPLE 1
+```
 .\Get-CmSiteInfo.ps1 -SiteServer "cm01.contoso.local" -SiteCode "P01" -Verbose
+```
 
 ### EXAMPLE 2
+```
 .\Get-CmSiteInfo.ps1 -SiteServer "cm01.contoso.local" -SiteCode "P01" -OutputLayout LIST
+```
 
 ### EXAMPLE 3
+```
 .\Get-CmSiteInfo.ps1 -SiteServer "cm01.contoso.local" -SiteCode "P01" -Interactive
+```
 
 ### EXAMPLE 4
+```
 .\Get-CmSiteInfo.ps1 -SiteServer "cm01.contoso.local" -SiteCode "P01" -QueryName "DB Index Fragmentation Details" -OutputLayout RAW | Set-Variable -Name frag
 $frag | Where-Object {$_.FragPct -gt 50}
+```
 
 ## NOTES
 0.1808.30 aka 0.1 aka brandnoobian - DS - First time getting drunk and passed out
