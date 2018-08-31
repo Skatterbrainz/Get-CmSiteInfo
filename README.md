@@ -1,11 +1,7 @@
 # Get-CmSiteInfo.ps1
-Get CM Site Information
 
-## .SYNOPSIS
+## DESCRIPTION
 Query Configuration Manager Database information
-
-## .DESCRIPTION
-Just what the Synopsis guy just said
 
 ## PARAMETERS
 
@@ -53,4 +49,4 @@ $frag | Where-Object {$_.FragPct -gt 50}
 ```
 
 ## NOTES
-0.1808.30 aka 0.1 aka brandnoobian - DS - First time getting drunk and passed out
+1808.30.01 aka 0.1 aka brandnoobian - DS - First time getting drunk and passed out
