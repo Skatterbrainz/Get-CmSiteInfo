@@ -41,4 +41,4 @@ Display queries from config file in grid view for user selection
 $frag | Where-Object {$_.FragPct -gt 50}
 
 ## .NOTES
-0.1808.30 - DS - First time getting drunk and passed out
+0.1808.30 aka 0.1 aka brandnoobian - DS - First time getting drunk and passed out
