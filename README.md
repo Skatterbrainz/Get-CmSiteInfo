@@ -1,44 +1,44 @@
 # Get-CmSiteInfo.ps1
 Get CM Site Information
 
-##.SYNOPSIS
+## .SYNOPSIS
 Query Configuration Manager Database information
 
-##.DESCRIPTION
+## .DESCRIPTION
 Just what the Synopsis guy just said
 
-##.PARAMETER SiteServer
+## .PARAMETER SiteServer
 FQDN for ConfigMgr SQL Database server
 
-##.PARAMETER SiteCode
+## .PARAMETER SiteCode
 Site Code
 
-##.PARAMETER OutputLayout
+## .PARAMETER OutputLayout
 Format for output: LIST, TABLE or RAW
 RAW is intended for pipeline and post-processing usage
 TABLE and LIST are for visual layout
 
-##.PARAMETER ConfigFile
+## .PARAMETER ConfigFile
 Path to XML configuration file. Default is cm-site-status.xml in same folder
 
-##.PARAMETER QueryName
+## .PARAMETER QueryName
 Specific query to run (only one at a time)
 
-##.PARAMETER Interactive
+## .PARAMETER Interactive
 Display queries from config file in grid view for user selection
 
-##.EXAMPLE 
+## .EXAMPLE 
 .\Get-CmSiteInfo.ps1 -SiteServer "cm01.contoso.local" -SiteCode "P01" -Verbose
 
-##.EXAMPLE
+## .EXAMPLE
 .\Get-CmSiteInfo.ps1 -SiteServer "cm01.contoso.local" -SiteCode "P01" -OutputLayout LIST
 
-##.EXAMPLE
+## .EXAMPLE
 .\Get-CmSiteInfo.ps1 -SiteServer "cm01.contoso.local" -SiteCode "P01" -Interactive
 
-##.EXAMPLE
+## .EXAMPLE
 .\Get-CmSiteInfo.ps1 -SiteServer "cm01.contoso.local" -SiteCode "P01" -QueryName "DB Index Fragmentation Details" -OutputLayout RAW | Set-Variable -Name frag
 $frag | Where-Object {$_.FragPct -gt 50}
 
-##.NOTES
+## .NOTES
 0.1808.30 - DS - First time getting drunk and passed out
